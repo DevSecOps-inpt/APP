@@ -1,1 +1,317 @@
-html 
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+
+        <meta name="google-site-verification" content="SPYBJBVHbhOem-FKRjbQOQi8jIg6DQ6Ih_uCH3bUhFg" /> 
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>AFENNANE MOHAMED AMINE</title>
+        <meta name="description" content="This is my E-Portfolio as electrical engineering student. " />
+    </head>
+    <body>
+        
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">
+                        <img src="{{ url_for('static', filename='HOME.png') }}" alt="Logo" />
+                    </a>
+                </div>
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#career" class="nav__link">Career & Education</a></li>
+                        <li class="nav__item"><a href="#blog" class="nav__link">Projects</a></li> 
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            
+            <div class="wrapper">
+                <div class="box">
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+                  <div></div>
+              
+                </div>
+              </div>
+            <section class="home bd-grid" id="home">
+                
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/in/mohamed-amine-afennane-1b3a86241/" class="home__social-icon"target="_blank"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://github.com/Cjamine" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <div class="home__data">
+                    <h1 class="home__title" style="text-align: left;" style="font-size: 90p;">Hi,I'm <span class="" style="color: rgb(209, 83, 148);">AFENNANE<br>Mohamed Amine</span><br>
+                    Electrical Engineering <br>Student</h1>
+                </div>
+
+                <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 539 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M69.19024 145.964C94.0253 76.5814 174.865 54.7299 244.111 29.4823C305.804 6.98884 371.86 -14.9503 430.735 14.143C491.207 44.026 527.948 107.508 537.191 174.311C545.897 237.229 514.931 294.377 476.506 344.954C433.74 401.245 386.068 462.801 315.442 466.189C239.416 469.835 171.552 422.137 125.158 361.805C77.4835 299.81 42.1617 219.583 69.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M160,100           <!-- Déplace le stylo au point de départ (160, 100) -->
+                                m-50,0            <!-- Déplace le stylo de -50 en x et 0 en y (pour se positionner correctement) -->
+                                a50,50 0 1,0 100,0 <!-- Tracer un arc de cercle (rx, ry, x-axis-rotation, large-arc-flag, sweep-flag, x, y) -->
+                                a50,50 0 1,0 -100,0 <!-- Tracer un arc de cercle (rx, ry, x-axis-rotation, large-arc-flag, sweep-flag, x, y) -->
+                                Z"/>             
+                    
+                            <image class="home__blob-img" x="60" y="0" width="479" height="467" href="{{ url_for('static', filename='My picture.png') }}"/>
+                        </g>
+                    </svg>
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img" data-sr-id="2" style="visibility: visible; opacity: 1; transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1); transition: opacity 2s cubic-bezier(0.5, 0, 0, 1) 0.2s, transform 2s cubic-bezier(0.5, 0, 0, 1) 0.2s;">
+                        <img src="{{ url_for('static', filename='ENSEM.png') }}" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'm AFENNANE Mohamed Amine</h2>
+                        <p class="about__text">
+                            <p><strong>I am a student engineer at <a href="https://portal.ensem.ac.ma/" style="color: rgb(209, 83, 148);">ENSEM</a>, specializing in electrical engineering. Fascinated by electricity's role in powering everyday life and its transformative impact, I am driven to innovate within this field. ENSEM's practical focus and innovative community align perfectly with my passion for pushing the boundaries of electrical engineering.</strong></p>
+                        </p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+                <div class="skills__container bd-grid">
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">Soft Skills</h2>
+                        <div class="skills__data">
+                            <h3>Personal Qualities:</h3>
+                            <ul class="skills__list skills__list--block">
+                                <li>Teamwork</li>
+                                <li>Communication</li>
+                                <li>Problem-solving</li>
+                                <li>Adaptability</li>
+                                <li>Time Management</li>
+                                <li>Leadership</li>
+                            </ul>
+                        </div>
+                        <div class="skills__data">
+                            <h3>Habits:</h3>
+                            <ul class="skills__list skills__list--block">
+                                <li>Volley ball</li>
+                                <li>Foot ball</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">Professional Skills</h2>
+                        <div class="skills__data">
+                            <p class="skills__text">Take a look at some of the things I love working on.</p>
+                            <div class="skills__data">
+                                <h3>Electrical Simulator:</h3>
+                                <ul class="skills__list skills__list--grid">
+                                    <li>
+                                        <a href="#"><img src="{{ url_for('static', filename='PSIM.png') }}" height="50" width="50" alt="Psim" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://matlab.mathworks.com/"><img src="{{ url_for('static', filename='MATLAB.png') }}" height="50" width="50" alt="MATLAB" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills__data">
+                                <h3>Computer Science:</h3>
+                                <ul class="skills__list skills__list--grid">
+                                    <li>
+                                        <a href="https://www.arduino.cc/"><img src="{{ url_for('static', filename='ARDUINO.png') }}" height="50" width="50" alt="Arduino" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.raspberrypi.org/"><img src="{{ url_for('static', filename='Raspberry_Pi_Logo.png') }}" height="50" width="50" alt="Raspberry Pi" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://developer.android.com/studio"><img src="{{ url_for('static', filename='Android_Studio.png') }}" height="50" width="50" alt="Android Studio" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://html.com/"><img src="{{ url_for('static', filename='html.png') }}" height="50" width="50" alt="HTML" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills__data">
+                                <h3>Languages:</h3>
+                                <ul class="skills__list skills__list--grid">
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='c.png') }}" height="50" width="50" alt="c" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='cpp.png') }}" height="50" width="50" alt="cpp" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='Python.png') }}" height="50" width="50" alt="Python" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='Java.png') }}" height="50" width="50" alt="Java" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='CSS.png') }}" height="50" width="50" alt="CSS" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.iso.org/iso-4217-currency-codes.html"><img src="{{ url_for('static', filename='JavaScript.png') }}" height="50" width="50" alt="JavaScript" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills__data">
+                                <h3>Programs:</h3>
+                                <ul class="skills__list skills__list--grid">
+                                    <li>
+                                        <a href="https://www.tinkercad.com/"><img src="{{ url_for('static', filename='Tinkercad.png') }}" height="50" width="50" alt="Tinkercad" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.proteus.design/"><img src="{{ url_for('static', filename='Proteus.png') }}" height="50" width="50" alt="Proteus" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Liquid_Soap.png') }}" height="50" width="50" alt="Liquid Soap" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='VisualStudio.png') }}" height="50" width="50" alt="Visual Studio" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Office_Pack.png') }}" height="50" width="50" alt="Office Pack" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='RobotStudio.png') }}" height="50" width="50" alt="RobotStudio" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='C++Builder.png') }}" height="50" width="50" alt="C++ Builder" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Dev_C++.png') }}" height="50" width="50" alt="Dev C++" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Photoshop.png') }}" height="50" width="50" alt="Photoshop" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="skills__data">
+                                <h3>Competencies:</h3>
+                                <ul class="skills__list skills__list--grid">
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Proficiency.png') }}" height="50" width="50" alt="Proficiency" target="_blank"></a>
+                                    </li>
+                                    <li>
+                                        <a href="https://www.liquidsoap.info/"><img src="{{ url_for('static', filename='Proficiency.png') }}" height="50" width="50" alt="Proficiency" target="_blank"></a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="skills section" id="career">
+                <h2 class="section-title">Career & Education</h2>
+                <div class="skills__container bd-grid">
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">Education</h2>
+                        <div class="skills__data">
+                            <h3>Academic Background</h3>
+                            <ul class="skills__list skills__list--block">
+                                <li>2015-2017 : Lycée Mohammed V (High School Diploma)</li>
+                                <li>2017-2019 : Lycée Abdelkarim El Khattabi (Preparatory Classes)</li>
+                                <li>2019-Present : ENSEM (Electrical Engineering Student)</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="skills__column">
+                        <h2 class="skills__subtitle">Professional Experience</h2>
+                        <div class="skills__data">
+                            <h3>Internships & Projects</h3>
+                            <ul class="skills__list skills__list--block">
+                                <li>2021: Internship at ONEE</li>
+                                <li>2022: Internship at ABB</li>
+                                <li>2023: Project on Smart Grid Systems</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="blog section" id="blog">
+                <h2 class="section-title">Projects</h2>
+                <div class="blog__container bd-grid">
+                    <div class="blog__content">
+                        <img src="{{ url_for('static', filename='project1.png') }}" alt="" class="blog__img">
+                        <div class="blog__data">
+                            <h2 class="blog__title">Project 1</h2>
+                            <span class="blog__subtitle">Smart Grid System</span>
+                            <p class="blog__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <img src="{{ url_for('static', filename='project2.png') }}" alt="" class="blog__img">
+                        <div class="blog__data">
+                            <h2 class="blog__title">Project 2</h2>
+                            <span class="blog__subtitle">Automated Lighting System</span>
+                            <p class="blog__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                    <div class="blog__content">
+                        <img src="{{ url_for('static', filename='project3.png') }}" alt="" class="blog__img">
+                        <div class="blog__data">
+                            <h2 class="blog__title">Project 3</h2>
+                            <span class="blog__subtitle">Energy Management System</span>
+                            <p class="blog__description">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+                <div class="contact__container bd-grid">
+                    <form action="https://formspree.io/YOUREMAILHERE" method="POST" class="contact__form">
+                        <input type="text" name="name" placeholder="Name" class="contact__input">
+                        <input type="email" name="email" placeholder="Email" class="contact__input">
+                        <textarea name="message" rows="10" placeholder="Message" class="contact__input"></textarea>
+                        <input type="submit" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <p class="footer__title">Abdessamad Essaghir</p>
+            <div class="footer__social">
+                <a href="#" class="footer__icon"><i class='bx bxl-facebook'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-instagram'></i></a>
+                <a href="#" class="footer__icon"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p>&#169; 2024 copyright all right reserved</p>
+        </footer>
+
+        <!--========== SCROLL REVEAL ==========-->
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <script src="{{ url_for('static', filename='main.js') }}"></script>
+    </body>
+</html>
